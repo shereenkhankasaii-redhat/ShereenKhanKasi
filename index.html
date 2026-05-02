@@ -20,27 +20,10 @@
             text-align: center;
         }
 
-        /* The Oval "Cup" Mask */
-        .img-mask {
-            border-radius: 0 0 120px 120px / 0 0 90px 90px;
-            width: 200px;
-            height: 140px;
-            margin-top: 15px;
-            overflow: hidden;
-            margin-left: auto;
-            margin-right: auto;
-            border: 3px solid white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #fff; /* Fallback color */
-        }
-
-        .img-mask img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: block;
+        img {
+            border-radius: 50%;
+            width: 120px;
+            margin-top: 10px;
         }
 
         section {
@@ -95,12 +78,9 @@
 <body>
 
 <header>
-    <h1>Shereen Khan</h1>
+    <h1>Your Name</h1>
     <p>Software Engineering Student</p>
-
-    <div class="img-mask">
-        <img src="profile.jpg" alt="Shereen Khan's Photo">
-    </div>
+    <img src="profile.jpg" alt="My Photo">
 </header>
 
 <section>
