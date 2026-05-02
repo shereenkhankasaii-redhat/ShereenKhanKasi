@@ -1,48 +1,80 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>My CV</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style>
         body {
-            font-family: Arial;
+            font-family: Arial, sans-serif;
             margin: 0;
             background: #f4f4f4;
+            color: #333;
         }
 
         header {
             background: linear-gradient(to right, darkblue, blue);
             color: white;
-            padding: 30px;
+            padding: 40px 20px;
             text-align: center;
         }
 
-        img {
+        header img {
             border-radius: 50%;
             width: 120px;
-            margin-top: 10px;
+            height: 120px;
+            object-fit: cover;
+            margin-top: 15px;
+            border: 3px solid white;
         }
 
         section {
             background: white;
-            margin: 20px;
-            padding: 20px;
+            margin: 20px auto;
+            padding: 25px;
             border-radius: 10px;
+            max-width: 800px; /* Centers the content for better readability */
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
 
         h2 {
             color: darkblue;
+            border-bottom: 2px solid #f4f4f4;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+
+        /* Sub-headings for within the Education section */
+        .sub-heading {
+            color: darkblue;
+            font-size: 1.1rem;
+            margin-top: 15px;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .education-item {
+            margin-bottom: 20px;
+        }
+
+        .education-item p {
+            margin: 5px 0;
         }
 
         ul {
             padding-left: 20px;
         }
 
+        li {
+            margin-bottom: 8px;
+        }
+
         footer {
             text-align: center;
-            padding: 10px;
+            padding: 20px;
             background: #ddd;
+            margin-top: 20px;
         }
     </style>
 </head>
@@ -52,40 +84,45 @@
 <header>
     <h1>Shereen Khan</h1>
     <p>Software Engineering Student</p>
-    <img src="profile.jpg" alt="My Photo">
+    <img src="profile.jpg" alt="Shereen Khan's Photo">
 </header>
 
 <section>
     <h2>About Me</h2>
     <p>I am a passionate Software Engineering student learning programming and web development.</p>
 </section>
-    
-</section>
-    <h2>School</h2>
-    <p>Iqra Residential School and College Quetta</p>
-</section>
 
-</section>
-    <h2>College</h2>
-    <p>Government Science College Quetta</p>
-</section>
-    
 <section>
     <h2>Education</h2>
-    <p>Balochistan University of Engineering and Technology Khuzdar</p>
+
+    <!-- University -->
+    <div class="education-item">
+        <div class="sub-heading">University</div>
+        <p>Balochistan University of Engineering and Technology Khuzdar</p>
+    </div>
+
+    <!-- College -->
+    <div class="education-item">
+        <div class="sub-heading">College</div>
+        <p>Government Science College Quetta</p>
+    </div>
+
+    <!-- School -->
+    <div class="education-item">
+        <div class="sub-heading">School</div>
+        <p>Iqra Residential School and College Quetta</p>
+    </div>
 </section>
 
 <section>
     <h2>Skills</h2>
     <ul>
         <li>C++</li>
-        <li>Phyton</li>
+        <li>Python</li>
         <li>MS Word</li>
         <li>Excel</li>
         <li>PowerPoint</li>
-        <li>AI Videos</li>
-        
-
+        <li>AI Video Generation</li>
     </ul>
 </section>
 
@@ -99,7 +136,7 @@
 
 <section>
     <h2>Contact</h2>
-    <p>Email: shereenkhankasaii@email.com</p>
+    <p><strong>Email:</strong> shereenkhankasaii@email.com</p>
 </section>
 
 <footer>
